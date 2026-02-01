@@ -2,6 +2,7 @@ package com.example.mediaplayerassignement;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -25,6 +26,14 @@ MediaPlayer player;
             return insets;
         });
         player=MediaPlayer.create(this,R.raw.hh);
-        player.start();
+//        player.start();
+        play=findViewById(R.id.play);
+        pause=findViewById(R.id.pause);
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                player.start();
+            }
+        });
     }
 }
