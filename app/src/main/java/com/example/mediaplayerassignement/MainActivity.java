@@ -34,6 +34,15 @@ MediaPlayer player;
             public void onClick(View v) {
                 player.start();
             }
+
         });
+        pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                player.pause();
+            }
+
+        });
+
     }
 }
