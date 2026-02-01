@@ -24,6 +24,7 @@ MediaPlayer player;
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-//        player=MediaPlayer.create(this,R.)
+        player=MediaPlayer.create(this,R.raw.hh);
+        player.start();
     }
 }
